@@ -1,0 +1,58 @@
+:root {
+  --main-color: rgb(95, 0, 128);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'malgun gothic', sans-serif;
+}
+body {
+  max-width: 1200px;
+}
+
+/* button, input css none */
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.signupAd {
+  width: 100vw;
+  background-color: var(--main-color);
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  padding: 10px 20px;
+}
+.signupAd p {
+  margin-left: auto;
+}
+
+.topNav {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+}
+
+.topNav button {
+  border-right: 1px solid gray;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+#signup {
+  color: var(--main-color);
+}
+
+.topNav button:last-child {
+  border-right: none;
+}
