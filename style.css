@@ -1,5 +1,6 @@
 :root {
   --main-color: rgb(95, 0, 128);
+  --sub-color: rgb(222, 222, 222);
 }
 
 * {
@@ -9,7 +10,7 @@
   font-family: 'Noto Sans', 'malgun gothic', sans-serif;
 }
 body {
-  width: 1050px;
+  width: 100%;
 }
 
 /* button, input css none */
@@ -21,11 +22,15 @@ input {
   padding: 0;
   font: inherit;
   outline: inherit;
+  cursor: pointer;
 }
-
+ul,
+li {
+  list-style: none;
+}
 .signupAd {
   width: 100vw;
-  min-width: 1200px;
+  min-width: 1090px;
   background-color: var(--main-color);
   color: aliceblue;
   text-align: center;
@@ -36,11 +41,14 @@ input {
   margin-left: auto;
 }
 .wrapper {
+  width: 1090px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .topNav {
   display: flex;
+  width: 100%;
   justify-content: end;
   font-size: 12px;
   gap: 10px;
@@ -48,9 +56,13 @@ input {
 }
 
 .divider {
-  color: rgb(222, 222, 222);
+  color: var(--sub-color);
 }
-
+#CS {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
 #signup {
   color: var(--main-color);
 }
@@ -62,6 +74,8 @@ input {
 .upperNav {
   display: flex;
   align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .kurly {
@@ -78,7 +92,7 @@ input {
 }
 #marketKurly::after {
   content: '|';
-  color: rgb(222, 222, 222);
+  color: var(--sub-color);
   font-weight: 100;
   margin-left: 10px;
 }
@@ -120,4 +134,36 @@ input {
   display: flex;
   gap: 20px;
   flex-shrink: 0;
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+#category {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 160px;
+}
+.nav {
+  display: flex;
+  gap: 100px;
+  margin-right: 100px;
+}
+#shippingInfoButton {
+  font-size: 12px;
+  border: 1px solid var(--sub-color);
+  border-radius: 12px;
+  padding: 5px 15px;
+}
+.strongColor {
+  color: var(--main-color);
+}
+.main {
+  width: 100%;
 }
