@@ -167,3 +167,25 @@ li {
 .main {
   width: 100%;
 }
+
+.imgList {
+  position: relative;
+  margin-top: 10px;
+}
+.imgItem {
+  max-width: 1470px;
+  height: 370px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#leftArrow {
+  left: 100px;
+  transform: rotate(180deg) translate(0, 50%);
+}
+#rightArrow {
+  right: 100px;
+}
