@@ -28,6 +28,7 @@ ul,
 li {
   list-style: none;
 }
+
 .signupAd {
   width: 100vw;
   min-width: 1090px;
@@ -188,4 +189,8 @@ li {
 }
 #rightArrow {
   right: 100px;
+}
+.hover:hover {
+  transition: 0.5s ease all;
+  transform: scale(1.03);
 }
